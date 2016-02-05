@@ -16,56 +16,66 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     </head>
     <body>
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>
-                        Author Name
-                    </th>
-                    <th>
-                        Author ID
-                    </th>
-                    <th>
-                        Time/Date Stamp
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        <p>${name1}</p>
-                    </td>
-                    <td>
-                        ${id1}
-                    </td>
-                    <td>
-                        ${date1}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        ${name2}
-                    </td>
-                    <td>
-                        ${id2}
-                    </td>
-                    <td>
-                        ${date2}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        ${name3}
-                    </td>
-                    <td>
-                        ${id3}
-                    </td>
-                    <td>
-                        ${date3}
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="row">
+            <div class ="container">
+                    <div class="panel panel-default">
+                    <!-- Default panel contents -->
+                    <div class="panel-heading">All Authors</div>
+                    <div class="panel-body">
+                      <p>Displayed a List of Author objects created in our AuthorService().  This is not currently hooked up to a Database. </p>
+                </div>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>
+                                Author Name
+                            </th>
+                            <th>
+                                Author ID
+                            </th>
+                            <th>
+                                Time/Date Stamp
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                ${firstAuthorName}
+                            </td>
+                            <td>
+                                ${firstAuthorId}
+                            </td>
+                            <td>
+                                ${firstTimeStamp}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                ${secondAuthorName}
+                            </td>
+                            <td>
+                                ${secondAuthorId}
+                            </td>
+                            <td>
+                                ${secondTimeStamp}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                ${thirdAuthorName}
+                            </td>
+                            <td>
+                                ${thirdAuthorId}
+                            </td>
+                            <td>
+                                ${thirdTimeStamp}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     </body>
