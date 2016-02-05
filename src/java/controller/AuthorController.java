@@ -55,8 +55,6 @@ public class AuthorController extends HttpServlet {
         request.setAttribute("id3", a3.get(1));
         request.setAttribute("date3", a3.get(3));
         
-        request.setAttribute("dicks", "dicks");
-        
         //    Testing Purposes - Left in to show a little bit of my process.
 //    public static void main(String[] args) {
 //        AuthorService aus = new AuthorService();
