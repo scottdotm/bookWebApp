@@ -6,7 +6,6 @@
 package controller;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.List;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -22,7 +21,7 @@ import model.AuthorService;
  */
 @WebServlet(name = "AuthorController", urlPatterns = {"/AuthorController"})
 public class AuthorController extends HttpServlet {
-    private static final String DEST_PAGE = "Home.jsp";
+    private static final String DEST_PAGE = "Authors.jsp";
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -42,6 +41,7 @@ public class AuthorController extends HttpServlet {
         List a1 = aus.getAuthor1();
         List a2 = aus.getAuthor2();
         List a3 = aus.getAuthor3();
+        
         
         request.setAttribute("name1", a1.get(0));
         request.setAttribute("id1", a1.get(1));
