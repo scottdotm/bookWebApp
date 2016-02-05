@@ -24,17 +24,3 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     </body>
 </html>
-
-<!--
-        request .setAttribute("name1", a1.get(0));
-        request .setAttribute("id1", a1.get(1));
-        request .setAttribute("date1", a1.get(2));
-        
-        request .setAttribute("name2", a2.get(0));
-        request .setAttribute("id2", a2.get(1));
-        request .setAttribute("date2", a2.get(2));
-        
-        request .setAttribute("name3", a3.get(0));
-        request .setAttribute("id3", a3.get(1));
-        request .setAttribute("date3", a3.get(3));
--->
