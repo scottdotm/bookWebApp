@@ -41,21 +41,21 @@ public class AuthorController extends HttpServlet {
         //Creating an instance of the AuthorService() - Creates our List and Populates it (our database)
         AuthorService aus = new AuthorService();
         
-        request.setAttribute("firstAuthorName", aus.getAuthor1().get(0));
-        request.setAttribute("firstAuthorId", aus.getAuthor1().get(1));
-        request.setAttribute("firstTimeStamp", aus.getAuthor1().get(2));
+        request.setAttribute("firstAuthorName", aus.getAuthors().get(0));
+        request.setAttribute("firstAuthorId", aus.getAuthors().get(1));
+        request.setAttribute("firstTimeStamp", aus.getAuthors().get(2));
         
-        request.setAttribute("secondAuthorName", aus.getAuthor2().get(0));
-        request.setAttribute("secondAuthorId", aus.getAuthor2().get(1));
-        request.setAttribute("secondTimeStamp", aus.getAuthor2().get(2));
+        request.setAttribute("secondAuthorName", aus.getAuthors().get(3));
+        request.setAttribute("secondAuthorId", aus.getAuthors().get(4));
+        request.setAttribute("secondTimeStamp", aus.getAuthors().get(5));
         
-        request.setAttribute("thirdAuthorName", aus.getAuthor3().get(0));
-        request.setAttribute("thirdAuthorId", aus.getAuthor3().get(1));
-        request.setAttribute("thirdTimeStamp", aus.getAuthor3().get(2));
+        request.setAttribute("thirdAuthorName", aus.getAuthors().get(6));
+        request.setAttribute("thirdAuthorId", aus.getAuthors().get(7));
+        request.setAttribute("thirdTimeStamp", aus.getAuthors().get(8));
         
-        request.setAttribute("fourthAuthorName", aus.getAuthor4().get(0));
-        request.setAttribute("fourthAuthorId", aus.getAuthor4().get(1));
-        request.setAttribute("fourthTimeStamp", aus.getAuthor4().get(2));
+        request.setAttribute("fourthAuthorName", aus.getAuthors().get(9));
+        request.setAttribute("fourthAuthorId", aus.getAuthors().get(10));
+        request.setAttribute("fourthTimeStamp", aus.getAuthors().get(11));
         
         //Request Dispatcher
         RequestDispatcher view =
@@ -101,5 +101,15 @@ public class AuthorController extends HttpServlet {
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
+    
+    //    Testing Purposes - Left in to show a little bit of my process.
+//    public static void main(String[] args) {
+//        AuthorService aus = new AuthorService();
+//        List test = aus.getAuthor1();
+//        List test2 = aus.getAuthor2();
+//        List test3 = aus.getAuthor3();
+//        System.out.println(test + "\n\n\n" + test2 + "\n\n\n" + test3);
+//        System.out.println(aus.getAuthors().get(12));
+//    }
 
 }
