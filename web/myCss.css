@@ -1,0 +1,13 @@
+/* 
+    Created on : Jan 28, 2016, 7:12:56 PM
+    Author     : Scott
+*/
+
+.footer{
+    bottom: 0;
+    width: 100%;
+    position: relative;
+}
+#img{
+    border-radius: 25px;
+}

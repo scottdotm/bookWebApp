@@ -57,7 +57,7 @@ public class Author {
     
     @Override
     public String toString() {
-        return "Author{" + "authorId=" + authorId + ", authorName=" + authorName + ", dateAdded=" + dateAdded + '}';
+        return "Author : " + " ID :" + authorId + "  Name :" + authorName + "  Timestamp :" + dateAdded + "\n\n <br>";
     }
 
     @Override
