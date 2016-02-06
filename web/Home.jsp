@@ -19,12 +19,13 @@
         <h1>Web Book App</h1>
         
         <form id="authors" name="authors" method="POST" action="AuthorController">
-        <input type="submit" name="submit" value="Show me the Table"/>
+            <input type="submit" name="submit" value="Show me the Table"/>
         </form>
         
         <form id="resume" name="resume" method="POST" action="/Resume1.1/Resume.jsp">
             <input type="submit" name="submit" value="Take me to the Resume">
         </form>
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     </body>

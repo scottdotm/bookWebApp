@@ -40,41 +40,22 @@ public class AuthorController extends HttpServlet {
         
         //Creating an instance of the AuthorService() - Creates our List and Populates it (our database)
         AuthorService aus = new AuthorService();
-        //"database" is read into and gathers our Author entities 
-        List a1 = aus.getAuthor1();
-        List a2 = aus.getAuthor2();
-        List a3 = aus.getAuthor3();
-        //This would be the result from our "database"
-        //NORMALLY this wouldn't be here - I am currently testing stuff
-        List totalAuthors = new ArrayList<>();
-        totalAuthors.addAll(a1);
-        totalAuthors.addAll(a2);
-        totalAuthors.addAll(a3);
         
+        request.setAttribute("firstAuthorName", aus.getAuthor1().get(0));
+        request.setAttribute("firstAuthorId", aus.getAuthor1().get(1));
+        request.setAttribute("firstTimeStamp", aus.getAuthor1().get(2));
         
-//        request.setAttribute("name1", a1.get(0));
-//        request.setAttribute("id1", a1.get(1));
-//        request.setAttribute("date1", a1.get(2));
-//        
-//        request.setAttribute("name2", a2.get(0));
-//        request.setAttribute("id2", a2.get(1));
-//        request.setAttribute("date2", a2.get(2));
-//        
-//        request.setAttribute("name3", a3.get(0));
-//        request.setAttribute("id3", a3.get(1));
-//        request.setAttribute("date3", a3.get(2));
+        request.setAttribute("secondAuthorName", aus.getAuthor2().get(0));
+        request.setAttribute("secondAuthorId", aus.getAuthor2().get(1));
+        request.setAttribute("secondTimeStamp", aus.getAuthor2().get(2));
         
-        request.setAttribute("total" , totalAuthors);
+        request.setAttribute("thirdAuthorName", aus.getAuthor3().get(0));
+        request.setAttribute("thirdAuthorId", aus.getAuthor3().get(1));
+        request.setAttribute("thirdTimeStamp", aus.getAuthor3().get(2));
         
-        request.setAttribute("firstAuthorName", totalAuthors.get(0));
-        request.setAttribute("firstAuthorId", totalAuthors.get(1));
-        request.setAttribute("firstTimeStamp", totalAuthors.get(2));
-        request.setAttribute("secondAuthorName", totalAuthors.get(3));
-        request.setAttribute("secondAuthorId", totalAuthors.get(4));
-        request.setAttribute("secondTimeStamp", totalAuthors.get(5));
-        request.setAttribute("thirdAuthorName", totalAuthors.get(6));
-        request.setAttribute("thirdAuthorId", totalAuthors.get(7));
-        request.setAttribute("thirdTimeStamp", totalAuthors.get(8));
+        request.setAttribute("fourthAuthorName", aus.getAuthor4().get(0));
+        request.setAttribute("fourthAuthorId", aus.getAuthor4().get(1));
+        request.setAttribute("fourthTimeStamp", aus.getAuthor4().get(2));
         
         //Request Dispatcher
         RequestDispatcher view =

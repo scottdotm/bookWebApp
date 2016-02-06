@@ -72,6 +72,17 @@
                                 ${thirdTimeStamp}
                             </td>
                         </tr>
+                        <tr>
+                            <td>
+                                ${fourthAuthorName}
+                            </td>
+                            <td>
+                                ${fourthAuthorId}
+                            </td>
+                            <td>
+                                ${fourthTimeStamp}
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
