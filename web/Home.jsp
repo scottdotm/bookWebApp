@@ -18,31 +18,36 @@
     </head>
     <body>
         <div class="row">
-            <div class ="container">
-                <h1 class="text-center">Web Book App</h1>
-                <div class="col-md-4">
-                    <p>This will return all of the authors in our FakeDatabase.</p>
-                    <form id="authors" name="authors" method="POST" action="AuthorController">
-                        <input type="submit" name="submit" value="Show me the Table"/>
-                    </form>
-                </div>
-                <div class="col-md-4">
-                    <p>This is a link to my resume created earlier in this class.</p>
-                    <form id="resume" name="resume" method="POST" action="/Resume1.1/Resume.jsp">
-                        <input type="submit" name="submit" value="Take me to the Resume">
-                    </form>
+                <div class ="container">
+                    <div id="cont">
+                        <br>
+                        <h1 class="text-center">Web Book App</h1>
+                        <br>
+                        <div class="col-md-4" id="content">
+                            <br>
+                            <p>This will return all of the authors in our FakeDatabase.</p>
+                            <form id="authors" name="authors" method="POST" action="AuthorController">
+                                <input type="submit" name="submit" value="Show me the Table"/>
+                            </form>
+                        </div>
+                        <div class="col-md-4 col-md-offset-4" id="content">
+                            <br>
+                            <p>This is a link to my resume created earlier in this class.</p>
+                            <form id="resume" name="resume" method="POST" action="/Resume1.1/Resume.jsp">
+                                <input type="submit" name="submit" value="Take me to the Resume">
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        <br>
         <br>
         <div class="row">
-            <div class="container">
                 <footer class="footer">
                     <div class="container">
                         Created by Scott Muth
                     </div>
                 </footer>
-            </div>
         </div>
             
         
